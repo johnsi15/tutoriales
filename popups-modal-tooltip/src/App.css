@@ -1,0 +1,66 @@
+[popover] {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#anchor_1 {
+  anchor-name: --anchor_1;
+}
+
+.tooltip {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+  overflow: visible;
+  position: absolute;
+  position-anchor: --anchor_1;
+  position-area: bottom center;
+  top: 12px;
+  width: 10rem;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #333 transparent;
+  border-style: solid;
+}
+
+dialog {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  margin: 0;
+  border: none;
+}
+
+dialog::backdrop {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 8, 20, 0.8);
+}
+
+@media screen and (max-width: 768px) {
+  dialog {
+    top: 50%;
+    width: 100%;
+    padding: 10px 0;
+  }
+}
