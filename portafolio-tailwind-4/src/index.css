@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Geist Sans';
+
+  --color-green-2-50: #eefff0;
+  --color-green-2-100: #d6ffde;
+  --color-green-2-200: #b1ffc0;
+  --color-green-2-300: #74ff90;
+  --color-green-2-400: #30f857;
+  --color-green-2-500: #06ec34;
+  --color-green-2-600: #00bb25;
+  --color-green-2-700: #029320;
+  --color-green-2-800: #08731f;
+  --color-green-2-900: #095e1d;
+  --color-green-2-950: #00350c;
+}
+
+@plugin '@tailwindcss/typography';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* body {
+  @apply min-h-screen bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-100;
+} */
