@@ -1,0 +1,62 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Big Shoulders Stencil', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-inter: 'Inter Variable', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+@font-face {
+  font-family: 'Big Shoulders Stencil';
+  src: url('./assets/fonts/BigShouldersStencil-Light.woff2') format('woff2'),
+    url('./assets/fonts/BigShouldersStencil-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Big Shoulders Stencil';
+  src: url('./assets/fonts/BigShouldersStencil-Medium.woff2') format('woff2'),
+    url('./assets/fonts/BigShouldersStencil-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Big Shoulders Stencil';
+  src: url('./assets/fonts/BigShouldersStencil-Regular.woff2') format('woff2'),
+    url('./assets/fonts/BigShouldersStencil-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Big Shoulders Stencil';
+  src: url('./assets/fonts/BigShouldersStencil-Bold.woff2') format('woff2'),
+    url('./assets/fonts/BigShouldersStencil-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+/* :root {
+  font-family: 'Big Shoulders Stencil', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
