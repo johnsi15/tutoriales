@@ -1,0 +1,63 @@
+header {
+  max-width: 1000px;
+  margin-bottom: 50px;
+  margin-inline: auto;
+}
+header nav {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  gap: 10px 20px;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#hero .image img {
+  width: 100%;
+}
+
+#hero .info {
+  background-color: chocolate;
+  box-sizing: border-box;
+  padding: 20px;
+  height: 100%;
+}
+
+.grid {
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.grid img {
+  width: 260px;
+}
+
+.grid .arrow {
+  width: 30px;
+}
+
+.grid .project {
+  border: 1px solid gray;
+  padding: 10px;
+}
