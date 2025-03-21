@@ -1,5 +1,4 @@
 import { ArrowIcon } from './ArrowIcon'
-import Button from './Button'
 
 function App() {
   const projects = [
@@ -94,7 +93,6 @@ function App() {
               I specialize in branding, web design, and print media that tells your story and connects with your
               audience.
             </p>
-            <Button />
           </div>
         </div>
       </section>
