@@ -16,9 +16,10 @@ const sampleProduct = {
 function App() {
   const [cart, setCart] = useState<(typeof sampleProduct)[]>([])
 
-  const handleAddToCart = () => {
+  const handleAddToCart = (product: typeof sampleProduct) => {
+    console.log({ product })
     const newId = Math.floor(Math.random() * 100)
-    const newProduct = { ...sampleProduct, id: newId }
+    const newProduct = { ...product, id: newId }
 
     setCart(prev => [...prev, newProduct])
   }
