@@ -1,0 +1,9 @@
+{
+	"devDependencies": {
+		"tailwindcss": "^4.1.12",
+		"postcss": "^8.5.6",
+		"autoprefixer": "^10.4.21",
+		"@headlessui/react": "^2.2.7",
+		"clsx": "^2.1.1"
+	}
+}
