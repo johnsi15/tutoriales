@@ -4,7 +4,7 @@ import { mswServer, http, HttpResponse } from '../api-mocks/msw-server'
 import App from '../App'
 
 describe('Component: App', () => {
-  it('displays returned products on successful fetch', async () => {
+  it('renders products fetched from the default API mock', async () => {
     render(<App />)
 
     const displayedProducts = await screen.findAllByTestId(/product-id-\d+/)
@@ -13,14 +13,16 @@ describe('Component: App', () => {
     expect(screen.getByText("L'Oreal Paris Infallible 24H Fresh Wear Foundation")).toBeInTheDocument()
   })
 
-  it('displays returned products on successful fetch', async () => {
+  it('renders products from a custom successful API response', async () => {
     createGetSuccessResponse('/products', [
       {
+        id: 1,
         title: 'Essence Mascara Lash Princess',
         description:
           'The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.',
       },
       {
+        id: 2,
         title: "L'Oreal Paris Infallible 24H Fresh Wear Foundation",
         description:
           "The L'Oreal Paris Infallible 24H Fresh Wear Foundation is a long-lasting foundation that provides a natural, matte finish. It is designed to stay fresh for up to 24 hours and is suitable for all skin types.",
