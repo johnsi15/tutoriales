@@ -1,5 +1,9 @@
+import { cacheLife } from 'next/cache'
+
 export async function StarsCount() {
-  const data = await fetch('https://api.github.com/repos/johnsi15/linknote', { next: { revalidate: 86400 } }) // Revalidate once a day
+  'use cache'
+  cacheLife('hours')
+  const data = await fetch('https://api.github.com/repos/johnsi15/linknote')
 
   const json = await data.json()
   const stars = json.stargazers_count
